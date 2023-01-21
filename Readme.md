@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Динар Ташбулатов](https://up.htmlacademy.ru/htmlcss/36/user/373113).
-* Наставник: `Дмитрий (sench) Железцов`.
+* Наставник: `Дмитрий (sench) Железцов`(https://htmlacademy.ru/profile/sench).
 
 ---
 
