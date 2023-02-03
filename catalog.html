@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Сливочное мороженное</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="main-header">
+      <!-- логотип -->
+      
+      <!-- Меню в хедере -->
+      <nav class="main-navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Логотип магазина мороженного Глэйси" src="">
+        </a>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="delivery-and-pay.html">Доставка и оплата</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="about-us.html">О компании</a>
+          </li>
+      </nav>
+      <p class="header-phone">+7 800 555-86-28</p>
+
+      <nav class="user-navigation">
+      <!-- телефон поиск коррзина вход -->
+      <ul class="user-navigation-list">
+        <li class="user-navigation-item">
+          <a class="hidden-item" href="">Поиск</a>
+        </li>
+        <li class="user-navigation-item">
+          <a href="">Вход</a>
+        </li>
+        <li class="user-navigation-item">
+          <a href="">2 товара</a>
+        </li>
+      </ul>
+    </header>
+    <!-- Main сайта -->
+    <main class="main-item">
+      <header class="item-header">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-chosen">Сливочное мороженное</a>
+          </li>    
+        </ul>
+        <h1>Сливочное мороженное</h1>
+      </header>
+      
+      <section class="buttericecream-catalog-products">
+        
+        <h2 class="visually-hidden">Каталог сливочного мороженного с фильтрами</h2>
+        
+        <form class="buttericecream-catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Сортировка</legend>
+              <label class="control">
+                По популярности
+                <input class="control-input" type="radio" name="by-popularity">
+              </label>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">0%
+                  <input type="radio" name="zero-percent">
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">до 10%
+                  <input type="radio" name="toten-percent" checked>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">до 30%
+                  <input type="radio" name="tothirty-percent">
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">выше 30%
+                  <input type="radio" name="uptothirty-percent">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Наполнители:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">шоколадные
+                  <input type="checkbox" name="choko" checked>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">сахарные посыпки
+                  <input type="checkbox" name="sugar-sprinkles" checked>
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">фрукты
+                  <input type="checkbox" name="fruits">
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">сиропы
+                  <input type="checkbox" name="sirops">
+                </label>
+              </li>
+
+              <li class="catalog-filter-item">
+                <label class="control">джемы
+                  <input type="checkbox" name="jams">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <button class="button" type='submit'>Применить</button>
+        
+        </form>
+
+      </section>
+      
+    </main>
+    
+    <footer class="main-footer">
+      <!-- Подвал сайта -->
+      <ul>
+        <li>tg</li>
+        <li>vk</li>
+        <li>yt</li>  
+      </ul>
+
+      <ul>
+        <li>
+          <a href="">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="">Наши документы</a>
+        </li>
+        <li>
+          <a href="">О производстве</a>
+        </li>
+        <li>
+          <a href="">Экологические стандарты</a>
+        </li>
+      </ul>
+
+      <p>.html academy</p>
+      <p>Сделано в .html academy © 2021</p>
+    </footer>
+  </body>
+</html>
