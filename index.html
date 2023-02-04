@@ -7,69 +7,71 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="page-header">
       <!-- Меню в хедере -->
-      <nav class="main-navigation">
+      <nav class="navigation">
         <!-- логотип -->
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип магазина мороженного Глэйси" src="">
-        </a>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
+     
+          <img class="logo" alt="Логотип магазина мороженного Глэйси" src="">
+     
+        <ul class="navigation-list">
+          <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
-          <li class="main-navigation-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="delivery-and-pay.html">Доставка и оплата</a>
           </li>
-          <li class="main-navigation-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="about-us.html">О компании</a>
           </li>
       </nav>
       <p class="header-phone">+7 800 555-86-28</p>
 
-      <nav class="user-navigation">
+      <nav class="navigation-user">
       <!-- телефон поиск коррзина вход -->
-      <ul class="user-navigation-list">
-        <li class="user-navigation-item">
-          <a class="hidden-item" href="">Поиск</a>
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
+          <a class="visually-hidden" href="#">Поиск</a>
         </li>
-        <li class="user-navigation-item">
-          <a href="">Вход</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Вход</a>
         </li>
-        <li class="user-navigation-item">
-          <a href="">2 товара</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">2 товара</a>
         </li>
       </ul>
     </header>
     
     <!-- Main сайта -->
     <main class="main-index">
+      
       <!-- Заголовок h1 сайта -->
-      <h1>Магазин мороженного "Глейси"</h1>
+      <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
       
       <!-- Секция слайдер -->
       <section class="slider">
-        <h2>Слайдер с рекламой мороженного</h2>
-        <ul>
-          <li>
-            <h2>Нежный пломбир с клубничным джемом</h2>
-            <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+        <h2 class="visually-hidden">Слайдер с рекламой мороженного</h2>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
+            <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+            <button>Заказать</button>
+            
+            <img src="">
+            <img src="">
+            <img src="">
+          </li>
+          <li class="slider-item">
+            <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
+            <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
             <button>Заказать</button>
             <img src="">
             <img src="">
             <img src="">
           </li>
-          <li>
-            <h2>Сливочное мороженое со вкусом банана</h2>
-            <p>Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-            <button>Заказать</button>
-            <img src="">
-            <img src="">
-            <img src="">
-          </li>
-          <li>
-            <h2>Карамельный пломбир с маршмеллоу</h2>
-            <p>Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+          <li class="slider-item">
+            <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
+            <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
             <button>Заказать</button>
             <img src="">
             <img src="">
@@ -82,53 +84,56 @@
       <!-- Секция слайдер -->
       <section class="gifts">
         <h2>Заказывайте мороженое и получайте подарки!</h2>
-        <ul>
-          <li>
-            <h4>Малинка даром!</h4>
-            <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <ul class="gifts-list">
+          <li class="gifts-item">
+            <h3 class="gifts-title">Малинка даром!</h3>
+            <p class="gifts-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <button>Хочу подарок</button>
+            <img src="">
           </li>
-          <li><h4>Маршмеллоу даром!</h4>
-            <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <li class="gifts-item">
+            <h3 class="gifts-title">Маршмеллоу даром!</h3>
+            <p class="gifts-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <button>Хочу подарок</button></li>
+            <img src="">
         </ul>
       </section>
       
-      <section class="types">
+      <section class="tastes">
       
         <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
       
-        <ul>
+        <ul class="tastes-list">
           
-          <li>
+          <li class="tastes-item">
             <img src="">
-            <h5>Малинка</h5>
-            <p>Сливочное мороженое с малиновым джемом</p>
-            <p>310 ₽/кг</p>
+            <h3 class="tastes-title">Малинка</h3>
+            <p class="tastes-description">Сливочное мороженое с малиновым джемом</p>
+            <p class="tastes-price">310 ₽/кг</p>
+            <button></button>
+          </li>
+          
+          <li class="tastes-item">
+            <img src="">
+            <h3 class="tastes-title">Фисташка</h3>
+            <p class="tastes-description">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="tastes-price">340 ₽/кг</p>
             <img src="">
           </li>
           
-          <li>
+          <li class="tastes-item">
             <img src="">
-            <h5>Фисташка</h5>
-            <p>Фисташковый пломбир с кусочками шоколада</p>
-            <p>340 ₽/кг</p>
-            <img src="">
-          </li>
-          
-          <li>
-            <img src="">
-            <h5>Черника</h5>
-            <p>Крем-брюле с черничным джемом</p>
-            <p>330 ₽/кг</p>
+            <h3 class="tastes-title">Черника</h3>
+            <p class="tastes-description">Крем-брюле с черничным джемом</p>
+            <p class="tastes-price">330 ₽/кг</p>
             <img src="">
           </li>
           
-          <li>
+          <li class="tastes-item">
             <img src="">
-            <h5>Бабл-гам</h5>
-            <p>Ванильный пломбир со сладкой посыпкой</p>
-            <p>320 ₽/кг</p>
+            <h3 class="tastes-title">Бабл-гам</h3>
+            <p class="tastes-description">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="tastes-price">320 ₽/кг</p>
             <img src="">
           </li>
 
@@ -136,41 +141,37 @@
 
       </section>
       
-      <section class="about-us">
+      <section class="advantages">
         <h2>Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <ul>
-          <li>
-            <img src="">
-            <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>  
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>  
           </li>
           
-          <li>
-            <img src="">
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>  
+          <li class="advantages-item">
+            <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>  
           </li>
 
-          <li>
-            <img src="">
-            <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>  
+          <li class="advantages-item">
+            <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>  
           </li>
 
-          <li>
-            <img src="">
-            <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>  
+          <li class="advantages-item">
+            <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>  
           </li>
           
         </ul>
       </section>
 
       <article class="blog">
-        <h2>Блог магазина Глейси</h2>
-        <p>Новое в нашем блоге</p>
-        <p>10 способов сервировки фруктовых щербетов к столу</p>
+        <h2 class="visually-hidden">Блог магазина Глейси</h2>
+        <p class="blog-description">Новое в нашем блоге</p>
+        <h3 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
       </article>
       
-      <section class="describe">
+      <section class="subscribe">
         <h2>Подписка на рассылку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form>
           <input type="" name="">
@@ -182,7 +183,7 @@
       <section class="delivery">
       
         <h2>Доставка любимого мороженого на дом</h2>
-        <p>Хочется полакомиться любимым десертом,  но нет времени съездить в магазин?     Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
+        <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
         </p>
 
         <form>
