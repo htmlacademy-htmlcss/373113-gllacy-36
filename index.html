@@ -12,7 +12,7 @@
       <nav class="navigation">
         <!-- логотип -->
      
-          <img class="logo" alt="Логотип магазина мороженного Глэйси" src="">
+        <img class="logo" alt="Логотип магазина мороженного Глэйси" src="">
      
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,22 +24,24 @@
           <li class="navigation-item">
             <a class="navigation-link" href="about-us.html">О компании</a>
           </li>
+        </ul>
       </nav>
-      <p class="header-phone">+7 800 555-86-28</p>
+      <span class="header-phone">+7 800 555-86-28</span>
 
       <nav class="navigation-user">
       <!-- телефон поиск коррзина вход -->
-      <ul class="navigation-user-list">
-        <li class="navigation-user-item">
-          <a class="visually-hidden" href="#">Поиск</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Вход</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">2 товара</a>
-        </li>
-      </ul>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <a class="visually-hidden" href="#">Поиск</a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Вход</a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">2 товара</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     
     <!-- Main сайта -->
@@ -70,7 +72,7 @@
             <img class="slider-image" src="" alt="Сливочное мороженое со вкусом банана">
             <img class="slider-image" src="" alt="Карамельный пломбир с маршмеллоу">
 
-            <<ol class="slider-pagination">
+            <ol class="slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">1 слайд</span>
@@ -111,14 +113,14 @@
             <img class="slider-image" src="" alt="Карамельный пломбир с маршмеллоу">
             <img class="slider-image" src="" alt="Нежный пломбир с клубничным джемом">
 
-            <<ol class="slider-pagination">
+            <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">2 слайд</span>
                 </button>
               </li>
@@ -153,9 +155,9 @@
             <img class="slider-image" src="" alt="Нежный пломбир с клубничным джемом">
             <img class="slider-image" src="" alt="Сливочное мороженое со вкусом банана">
 
-            <<ol class="slider-pagination">
+            <ol class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="slider-pagination-button" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
               </li>
@@ -165,7 +167,7 @@
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">3 слайд</span>
                 </button>
               </li>
@@ -182,11 +184,7 @@
                 <a class="social-icon" href=""></a>
               </li>
             </ul>
-          </li>
-         
-          </li>
-
-        </ol>
+          </ol>
       </section>
 
       <!-- Секция слайдер -->
@@ -202,8 +200,9 @@
           <li class="gifts-item">
             <h3 class="gifts-title">Маршмеллоу даром!</h3>
             <p class="gifts-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <button>Хочу подарок</button></li>
+            <button>Хочу подарок</button>
             <img src="">
+          </li>
         </ul>
       </section>
       
@@ -211,38 +210,46 @@
       
         <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
       
-        <ul class="tastes-list">
+        <ul class="product-list">
           
-          <li class="tastes-item">
-            <img src="">
-            <h3 class="tastes-title">Малинка</h3>
-            <p class="tastes-description">Сливочное мороженое с малиновым джемом</p>
-            <p class="tastes-price">310 ₽/кг</p>
-            <button></button>
+          <li class="product-card">
+            <a href="product.html">
+              <img src="product-card-image">
+              <h3 class="product-card-title">Малинка</h3>
+              <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
+            </a>
+            <p class="product-card-price">310 ₽/<span>кг</span></p>
+            <a class="product-card-button" href="#"></a>
           </li>
-          
-          <li class="tastes-item">
-            <img src="">
-            <h3 class="tastes-title">Фисташка</h3>
-            <p class="tastes-description">Фисташковый пломбир с кусочками шоколада</p>
-            <p class="tastes-price">340 ₽/кг</p>
-            <img src="">
+            
+          <li class="product-card">
+            <a href="product.html">
+              <img src="product-card-image">
+              <h3 class="product-card-title">Фисташка</h3>
+              <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
+            </a>
+            <p class="product-card-price">340 ₽/<span>кг</span></p>
+            <a class="product-card-button" href="#"></a>
           </li>
-          
-          <li class="tastes-item">
-            <img src="">
-            <h3 class="tastes-title">Черника</h3>
-            <p class="tastes-description">Крем-брюле с черничным джемом</p>
-            <p class="tastes-price">330 ₽/кг</p>
-            <img src="">
+            
+          <li class="product-card">
+            <a href="product.html">
+              <img src="product-card-image">
+              <h3 class="product-card-title">Черника</h3>
+              <p class="product-card-description">Крем-брюле с черничным джемом</p>
+            </a>
+            <p class="product-card-price">330 ₽/<span>кг</span></p>
+            <a class="product-card-button" href="#"></a>
           </li>
-          
-          <li class="tastes-item">
-            <img src="">
-            <h3 class="tastes-title">Бабл-гам</h3>
-            <p class="tastes-description">Ванильный пломбир со сладкой посыпкой</p>
-            <p class="tastes-price">320 ₽/кг</p>
-            <img src="">
+            
+          <li class="product-card">
+            <a href="product.html">
+              <img src="product-card-image">
+              <h3 class="product-card-title">Бабл-гам</h3>
+              <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
+            </a>
+            <p class="product-card-price">320 ₽/<span>кг</span></p>
+            <a class="product-card-button" href="#"></a>
           </li>
 
         </ul>
@@ -273,8 +280,8 @@
 
       <article class="blog">
         <h2 class="visually-hidden">Блог магазина Глейси</h2>
-        <p class="blog-description">Новое в нашем блоге</p>
-        <h3 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
+        <h3 class="blog-title">Новое в нашем блоге</h3>
+        <a class="blog-description">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       
       <section class="subscribe">
@@ -315,9 +322,9 @@
         <h2>Контакты</h2>
 
         <address class="contacts-address">
-          <h3 class="contacts-title">Адрес главного офиса и офлайн-магазина:</h3>
+          <span class="contacts-description">Адрес главного офиса и офлайн-магазина:</span>
           <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <h3 class="contacts-title">Для заказов по телефону:</h3>
+          <span class="contacts-description">Для заказов по телефону:</span>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <button>Форма обратной связи</button>
