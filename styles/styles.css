@@ -28,6 +28,7 @@ body {
   line-height: 22px;
   background-color: #FEAFC3;
   color: #2D3440;
+  margin: 0;
 }
 
 .button{
@@ -39,7 +40,6 @@ body {
   color: #ffffff;
   background-color: #FF2F64;
   text-decoration: none;
-
 }
 
 .white-button{
@@ -69,6 +69,7 @@ color: #2D3440;
   font-size: 14px;
   line-height: 20px;
 }
+
 .header-phone{
   font-weight: 700;
 }
@@ -108,7 +109,7 @@ color: #2D3440;
   font-weight: 700;
 }
 
-h2{
+.section-h2{
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -183,17 +184,11 @@ h2{
 
 .navigation-user-item{
   background:rgba(252, 252, 252, 0.3);
-
 }
-
-
-
-
 
 .catalog-filter-list{
   background: rgba(252, 252, 252, 0.3);
-border-radius: 18px;
-
+  border-radius: 18px;
 }
 
 .slider-button{
@@ -205,64 +200,53 @@ border-radius: 18px;
 
 .slider-pagination-button{
   background: rgba(252, 252, 252, 1);
-
 }
 .gifts-item{
   background: #FF7799;
-
 }
 
 .product-card{
   background: #FCFCFC;
-
 }
 
 .advantages{
-  background: #FCFCFC;
-  background-image: url("../images/backgrounds/background-waffle.jpg");
+  background: #FCFCFC url("../images/backgrounds/background-waffle.jpg");
 }
 
 .advantages-wrapper{
   background: #FFFFFF;
-
 }
 
 .subscribe{
-  background: #FCFCFC;
-  background-image: url("../images/backgrounds/subscribe.jpg");
+  background: #FCFCFC url("../images/backgrounds/subscribe.jpg");
 }
-
 
 .subscribe-wrapper{
   background: #FFFFFF;
 }
+
 .delivery{
-  background: #FCFCFC;
-  background-image: url("../images/backgrounds/delivery.jpg");
+  background: #FCFCFC url("../images/backgrounds/delivery.jpg");
 }
+
 .delivery-form{
   background: #FCFCFC;
-
 }
 
 .contacts{
-  background: #FCFCFC;
-  background-image: url("../images/backgrounds/contacts.jpg");
+  background: #FCFCFC url("../images/backgrounds/contacts.jpg");
 }
 
 .contacts-address{
   background: #FCFCFC;
-
 }
 
 .pagination-current{
   background: #FCFCFC;
-
 }
 
 .blog{
-  background: #FCFCFC;
-  background-image: url("../images/backgrounds/blog.jpg");
+  background: #FCFCFC url("../images/backgrounds/blog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: left;
