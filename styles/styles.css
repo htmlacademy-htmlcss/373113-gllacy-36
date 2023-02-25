@@ -22,13 +22,52 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   background-color: #FEAFC3;
   color: #2D3440;
+}
+
+.container{
+  margin:0 auto;
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
+.navigation{
+  display:flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo{
+  width:137px;
+  margin-right: 16px;
+}
+
+.navigation-list {
   margin: 0;
+  padding: 0;
+  width:422px;
+}
+
+.navigation-user {
+  max-width: 500px;
+  margin-left: auto;
 }
 
 .button{
