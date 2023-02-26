@@ -14,44 +14,45 @@
         <nav class="navigation">
           <!-- логотип -->
 
-            <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
-
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <button class="navigation-link dropdown">Каталог</button>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link">Новинки</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link">Сливочное</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link">Щербеты</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link">Фруктовый лед</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link">Мелорин</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="delivery-and-pay.html">Доставка и оплата</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="about-us.html">О компании</a>
-              </li>
-            </ul>
-          </nav>
-        <span class="header-phone">+7 800 555-86-28</span>
-
-        <nav class="navigation-user">
-        <!-- телефон поиск коррзина вход -->
-          <ul class="navigation-user-list">
+          <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
+          <!-- левое меню в хедере -->
+          <ul class="navigation-list">
+            <!-- раскрывающийся пункт меню -->
+            <li class="navigation-item">
+              <button class="navigation-link dropdown">Каталог</button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Новинки</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Сливочное</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Щербеты</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="delivery-and-pay.html">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about-us.html">О компании</a>
+            </li>
+          </ul>
+          <!-- телефон поиск коррзина вход -->
+          <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
-              <a class="visually-hidden" href="#">Поиск</a>
+              <span class="header-phone">+7 800 555-86-28</span>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Поиск</span></a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Вход</a>
@@ -86,7 +87,7 @@
 
           <form class="butter-ice-cream-catalog-filter" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-sort">
               <legend class="catalog-filter-title">Сортировка</legend>
                 <label class="control catalog-filter-list">
                   По популярности
@@ -94,11 +95,11 @@
                 </label>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-fat">
               <legend class="catalog-filter-title">Жирность:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -127,7 +128,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-fill">
               <legend class="catalog-filter-title">Наполнители:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -163,7 +164,7 @@
             </fieldset>
 
 
-            <button class="button rose-button" type='submit'>Применить</button>
+            <button class="button rose-button filter-button" type='submit'>Применить</button>
 
           </form>
 
@@ -373,6 +374,7 @@
           </li>
         </ul>
 
+
         <nav class="navigation-footer">
           <ul class="navigation-footer-list">
             <li class="navigation-footer-item">
@@ -389,12 +391,13 @@
             </li>
           </ul>
         </nav>
-
-        <a class="logo-academy" href="https://htmlacademy.ru/">
-          <img class="logo-academy-image" src="images/logo_htmlacademy.svg" alt="Логотип академии">
-        </a>
-        <p class="copy-rights">Сделано в <a class="copy-rights-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
-      </footer>
+        <div class="copy-rights-wrapper">
+          <a class="logo-academy" href="https://htmlacademy.ru/">
+            <img class="logo-academy-image" src="images/logo_htmlacademy.svg" alt="Логотип академии">
+          </a>
+          <p class="copy-rights">Сделано в <a class="copy-rights-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        </div>
+        </footer>
     </div>
   </body>
 </html>
