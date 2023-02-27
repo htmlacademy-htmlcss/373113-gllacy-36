@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
@@ -6,7 +6,7 @@
   font-display: swap;
 }
 
-@font-face {
+@font-face{
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-@font-face {
+@font-face{
   font-family: Inter;
   font-style: normal;
   font-weight: 900;
@@ -22,11 +22,11 @@
   font-display: swap;
 }
 
-html {
+html{
   height: 100%;
 }
 
-body {
+body{
   margin: 0;
   height: 100%;
   font-family: "Inter", sans-serif;
@@ -59,13 +59,13 @@ body {
   margin-right: 16px;
 }
 
-.navigation-list {
+.navigation-list{
   margin: 0;
   padding: 0;
   width:522px;
 }
 
-.navigation-user {
+.navigation-user{
   max-width: 500px;
   margin-left: auto;
 }
@@ -241,8 +241,8 @@ h2.delivery-section-h2{
 
 .white-button{
   background: linear-gradient(0deg, #FCFCFC, #FCFCFC),
-linear-gradient(0deg, rgba(252, 252, 252, 0.4), rgba(252, 252, 252, 0.4));
-color: #2D3440;
+  linear-gradient(0deg, rgba(252, 252, 252, 0.4), rgba(252, 252, 252, 0.4));
+  color: #2D3440;
 }
 
 .rose-button{
@@ -261,8 +261,7 @@ color: #2D3440;
 .navigation-footer-item,
 .pagination-link,
 .catalog-filter-title,
-.control
-  {
+.control{
   font-size: 14px;
   line-height: 20px;
 }
@@ -445,9 +444,8 @@ color: #2D3440;
 }
 
 .blog{
-  background: #FCFCFC url("../images/backgrounds/blog.jpg");
+  background: #FCFCFC url("../images/backgrounds/blog.jpg") no-repeat;
   background-size: 100% auto;
-  background-repeat: no-repeat;
   text-align: left;
 }
 
