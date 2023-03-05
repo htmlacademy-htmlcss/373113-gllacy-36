@@ -132,6 +132,10 @@ header{
   padding: 16px 8px;
 }
 
+.slider{
+  margin-bottom: 80px;
+}
+
 .slider-item{
   display:flex;
   flex-wrap: wrap;
@@ -140,13 +144,12 @@ header{
 .slider-description-wrapper{
   width:429px;
   padding-left: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center
+  padding-top: 135px;
 }
 
 .slider-title{
   margin: 0;
+  padding: 0;
   margin-bottom: 24px;
 }
 
@@ -168,19 +171,38 @@ header{
 .slider-pagination{
   margin: 0;
   padding:0;
+  list-style: none;
+  display: flex;
 }
 
 .social-slider-list{
   margin: 0;
   padding:0;
   margin-left: auto;
+  display: flex;
+}
+
+.social-list{
+  display: block;
+}
+
+.social-item{
+  display: block;
+}
+
+.social-icon{
+  display: block;
+}
+
+.gifts{
+  margin-bottom: 81px;
 }
 
 .section-gifts-h2{
   width: 434px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
 }
 
 .gifts-list{
@@ -198,12 +220,37 @@ header{
 
 .gifts-description-wrapper{
   padding-left: 36px;
+  padding-top: 36px;
+}
+
+.gifts-title{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gifts-description{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.gifts-button{
+  margin: 0;
+  margin-right: auto;
+  margin-top:14px;
+  border-radius: 26px;
+}
+
+.tastes{
+  margin-bottom: 80px;
 }
 
 .section-tastes-h2{
   margin: 0 auto;
   text-align: center;
   width:527px;
+  margin-bottom: 107px;
 }
 
 .product-list{
@@ -212,10 +259,15 @@ header{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .product-card{
   width: 270px;
+}
+
+.advantages{
+  margin-bottom: 80px;
 }
 
 .advantages-wrapper{
@@ -223,9 +275,44 @@ header{
   padding: 56px 39px 56px 40px;
 }
 
+.section-advantages-h2{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.advantages-list{
+  width: 1024px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.advantages-item{
+  width:442px;
+  margin-bottom: 40px;
+}
+
+.advantages-item:nth-child(2n-1){
+  margin-right: 32px;
+}
+
+.advantages-item:nth-child(2n){
+  margin-right: 0;
+}
+
+.advantages-description{
+  padding: 0;
+  margin: 0;
+}
+
 .blog-subscribe-wrapper{
   display:flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .blog,
@@ -233,26 +320,59 @@ header{
   width:570px;
 }
 
+.blog-title{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12.22px;
+}
+
 .blog-wrapper{
   width:303px;
   padding-left: 32px;
+  padding-top: 32.59px;
+}
+
+.blog-description{
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe-wrapper{
   padding: 26px;;
 }
 
+.subscribe-description{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+}
+
+.form-input-subscribe{
+  width: 332px;
+  height: 48px;
+  margin-right: 18px;
+}
+
 .delivery{
   display: flex;
+  margin-bottom: 80px;
+}
+
+.delivery-form{
+  margin: 64px;
+  padding: 40px;
 }
 
 .delivery-description-wrapper{
   width: 371px;
   padding-left: 100px;
+  padding-top: 167px;
 }
 
 h2.delivery-section-h2{
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .delivery-form{
@@ -262,14 +382,47 @@ h2.delivery-section-h2{
   padding: 40px 40px 42px 40px;
 }
 
+.delivery-form-description{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.label{
+  display: block;
+}
+
 .contacts-wrapper{
-  width:263px;
+  width:343px;
   background-color:#FCFCFC;
   padding: 40px 40px 42px 40px;
 }
 
 .contacts{
   padding: 64px;
+}
+
+.contacts-description{
+  display: block;
+  width:179px;
+  margin-bottom: 12px;
+}
+
+.contacts-address-text{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-description-phone{
+  display: block;
+  width:203px;
+  margin-bottom: 12px;
+}
+
+.schedule-phone{
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer{
@@ -328,9 +481,11 @@ h2.delivery-section-h2{
 }
 
 .rose-button{
-  color: #2D3440;
-  background:rgba(252, 252, 252, 0.3);
-  border: 2px solid rgba(252, 252, 252, 1)
+  color: #FCFCFC;
+  background: linear-gradient(0deg, #FF2F64, #FF2F64),
+  linear-gradient(0deg, rgba(255, 47, 100, 0.3), rgba(255, 47, 100, 0.3));
+  padding: 12px 32px;
+
 }
 
 .navigation-link{
@@ -477,7 +632,7 @@ h2.delivery-section-h2{
   /* basic/extra-light */
   border: 2px solid #FCFCFC;
   border-radius: 26px;
-  align-self: flex-start;
+  margin-right: auto;
 }
 
 .slider-pagination-button{
