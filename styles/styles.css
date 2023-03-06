@@ -59,8 +59,15 @@ body{
   flex-grow: 1;
 }
 
-header{
-  height:104px;
+.page-header{
+  padding: 24px 0;
+}
+
+.section-h2{
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .navigation{
@@ -116,8 +123,7 @@ header{
   padding: 6px 16px;
   background:rgba(252, 252, 252, 0.3);
   border-radius:30px;
-
-}
+ }
 
 .header-phone{
   padding-top: 6px;
@@ -180,18 +186,6 @@ header{
   padding:0;
   margin-left: auto;
   display: flex;
-}
-
-.social-list{
-  display: block;
-}
-
-.social-item{
-  display: block;
-}
-
-.social-icon{
-  display: block;
 }
 
 .gifts{
@@ -412,6 +406,7 @@ h2.delivery-section-h2{
   padding: 0;
   margin: 0;
   margin-bottom: 24px;
+  width:263px;
 }
 
 .contacts-description-phone{
@@ -423,11 +418,73 @@ h2.delivery-section-h2{
 .schedule-phone{
   margin: 0;
   padding: 0;
+  margin-bottom: 12px;
+}
+
+.form-button-contact{
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
 }
 
 .main-footer{
   display: flex;
   justify-content: space-between;
+  padding: 48px 0;
+}
+
+.social-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.social-item{
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.navigation-footer{
+  width:356px;
+}
+
+.navigation-footer-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.main-item{
+  padding-top: 32px;
+}
+
+.breadcrumbs{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-item{
+  margin-right: 28px;
+}
+
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.breadcrumbs-link-current{
+  text-decoration: underline;
+}
+
+.section-h2-butter-ice-cream{
+  text-align: left;
+  margin: 0;
 }
 
 .butter-ice-cream-catalog-filter{
@@ -435,11 +492,43 @@ h2.delivery-section-h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 96px;
+}
+
+.catalog-filter-title{
+  margin-bottom: 8px;
+}
+
+.control-sort{
+  margin: 0;
+  padding: 0;
+  padding: 8px 63px 8px 16px;
+}
+
+.catalog-filter-item{
+  margin-right: 16px;
+}
+
+.catalog-filter-list{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group{
   margin: 0;
   padding: 0;
+}
+
+.product-card{
+  margin-bottom: 91px;
+}
+
+.button-pagination{
+  display: flex;
+  padding: 41px 0;
 }
 
 .catalog-filter-group-sort{
@@ -460,6 +549,23 @@ h2.delivery-section-h2{
 
 .filter-button{
   width: 185px;
+}
+
+.pagination{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.pagination-item{
+  margin-right: 12px;
+}
+
+.pagination-link{
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .button{
@@ -549,13 +655,6 @@ h2.delivery-section-h2{
   font-weight: 700;
 }
 
-.section-h2{
-  font-size: 32px;
-  line-height: 46px;
-  font-weight: 900;
-  text-align: center;
-}
-
 .gifts-title,
 .blog-description{
   font-size: 24px;
@@ -602,7 +701,6 @@ h2.delivery-section-h2{
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-
 }
 
 .contacts-address{
@@ -622,7 +720,8 @@ h2.delivery-section-h2{
   font-weight: 400;
 }
 
-.catalog-filter-list{
+.catalog-filter-list,
+.control-sort{
   background: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
 }
