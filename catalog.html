@@ -10,6 +10,7 @@
     <div class="container">
       <!-- Шапка сайта -->
       <header class="page-header">
+
         <!-- Меню в хедере -->
         <nav class="navigation">
           <!-- логотип -->
@@ -20,7 +21,7 @@
             <!-- раскрывающийся пункт меню -->
             <li class="navigation-item">
               <button class="navigation-link dropdown">Каталог</button>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu visually-hidden">
                 <li class="dropdown-menu-item">
                   <a class="dropdown-menu-link" href="#">Новинки</a>
                 </li>
@@ -62,7 +63,8 @@
             </li>
           </ul>
         </nav>
-      </header>
+
+    </header>
       <!-- Main сайта -->
 
     <main class="main-item">
@@ -78,7 +80,7 @@
               <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженное</a>
             </li>
           </ul>
-          <h2 class="section-h2">Сливочное мороженное</h2>
+          <h2 class="section-h2 section-h2-butter-ice-cream">Сливочное мороженное</h2>
         </header>
 
         <section class="butter-ice-cream-catalog-products">
@@ -89,7 +91,7 @@
 
             <fieldset class="catalog-filter-group catalog-filter-group-sort">
               <legend class="catalog-filter-title">Сортировка</legend>
-                <label class="control catalog-filter-list">
+                <label class="control control-sort">
                   По популярности
                   <input class="control-input catalog-filter-list" type="radio" name="by-popularity">
                 </label>
@@ -296,7 +298,7 @@
                 <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
               </a>
               <p class="product-card-price">360 ₽/<span>кг</span></p>
-              <<button class="button product-card-button">
+              <button class="button product-card-button">
                 <span class="visually-hidden">Добавить в корзину</span>
               </button>
             </li>
@@ -314,37 +316,37 @@
             </li>
 
           </ul>
+          <div class="button-pagination">
+            <button class="button white-button pagination-show-more" type="button">Показать ещё</button>
 
-          <button class="button white-button pagination-show-more" type="button">Показать ещё</button>
-
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
         </section>
 
