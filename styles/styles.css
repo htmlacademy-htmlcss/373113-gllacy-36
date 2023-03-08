@@ -250,14 +250,28 @@ body{
 .product-list{
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 91px 30px;
 }
 
 .product-card{
   width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-content{
+  padding: 0 40px 24px 40px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-cart{
+  display: flex;
+  justify-content: space-between;
 }
 
 .advantages{
@@ -280,9 +294,12 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  display:flex;
-  flex-wrap: wrap;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 505px 505px;
+  grid-template-rows: 66px 66px;
+  flex-wrap: wrap;
+  grid-gap: 40px 33px;
 }
 
 .advantages-item{
@@ -341,6 +358,13 @@ body{
   margin-bottom: 44px;
 }
 
+.subscribe-form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 506px;
+  box-sizing: border-box;
+}
+
 .form-input-subscribe{
   width: 332px;
   height: 48px;
@@ -350,30 +374,32 @@ body{
 .delivery{
   display: flex;
   margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
 }
 
 .delivery-form{
-  margin: 64px;
+  margin: 0;
+  padding: 0;
+  width: 420px;
   padding: 40px;
+  margin-left: 135px;
 }
 
 .delivery-description-wrapper{
   width: 371px;
-  padding-left: 100px;
-  padding-top: 167px;
+  padding-top: 103px;
 }
 
 h2.delivery-section-h2{
-  text-align: left;
   margin: 0;
   padding: 0;
+  margin-bottom: 24px;
+  text-align: left;
 }
 
-.delivery-form{
-  width: 420px;
-  margin-right: 64px;
-  margin-left: auto;
-  padding: 40px 40px 42px 40px;
+.delivery-description{
+  margin: 0;
+  padding: 0;
 }
 
 .delivery-form-description{
@@ -382,8 +408,29 @@ h2.delivery-section-h2{
   margin-bottom: 32px;
 }
 
-.label{
+.deliveri-details-form{
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.form-label{
   display: block;
+}
+
+.delivery-form-address{
+  grid-column: 1 / -1;
+}
+
+.delivery-submit{
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.field-group{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-wrapper{
@@ -452,9 +499,11 @@ h2.delivery-section-h2{
 }
 
 .navigation-footer-list{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   list-style: none;
+  grid-template-columns: max-content max-content;
+   grid-template-rows: auto auto;
+   gap: 8px 24px;
 }
 
 .main-item{
@@ -520,10 +569,6 @@ h2.delivery-section-h2{
 .catalog-filter-group{
   margin: 0;
   padding: 0;
-}
-
-.product-card{
-  margin-bottom: 91px;
 }
 
 .button-pagination{
@@ -696,7 +741,7 @@ h2.delivery-section-h2{
   font-weight: 400;
 }
 
-.label,
+.form-label,
 .button{
   font-size: 16px;
   line-height: 20px;
