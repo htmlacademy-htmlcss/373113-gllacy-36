@@ -124,6 +124,7 @@ body{
 .navigation-item{
   padding: 0;
   margin:0;
+  position: relative;
 }
 
 .navigation-link{
@@ -132,6 +133,7 @@ body{
 }
 
 .navigation-user-link{
+  position:relative;
   padding: 0 16px;
   background:rgba(252, 252, 252, 0.3);
   border-radius:30px;
@@ -139,6 +141,25 @@ body{
   min-height: 32px;
   display: flex;
   align-items: center;
+  padding-left: 38px;
+}
+
+.navigation-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #2D3440;
+}
+
+.navigation-link-login .navigation-icon,
+.navigation-link-cart .navigation-icon
+{
+  right: auto;
+  left: 17px;
+  margin: auto 0;
 }
 
 .header-phone{
@@ -151,7 +172,12 @@ body{
   margin: 0;
   background: none;
   border:none;
-  padding: 16px 8px;
+  padding: 16px 38px 16px 8px;
+}
+
+.dropdown .navigation-icon{
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 .slider{
@@ -159,6 +185,11 @@ body{
 }
 
 ol.lider-list{
+  margin: 0;
+  padding: 0;
+}
+
+.slider-list{
   margin: 0;
   padding: 0;
 }
@@ -217,15 +248,31 @@ height:12px;
   height: 100%
 }
 
-.slider-prev{
+.slider-previous{
   order: -2;
   background: none;
   padding: 0;
+  position: relative;
 }
 
+.slider-select-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.slider-previous .slider-select-icon{
+  left:-19px;
+}
+
+.slider-next .slider-select-icon{
+  right:-19px;
+}
 .slider-next{
   background: none;
   padding: 0;
+  position: relative;
 }
 
 .slider-current-image-wrapper{
@@ -242,7 +289,11 @@ height:12px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  margin-left:41px;
+}
 
+.slider-image-wrapper:first-child{
+  margin-left: 57px;
 }
 
 .slider-pagination{
@@ -659,10 +710,12 @@ h2.delivery-section-h2{
   display: flex;
   list-style-type: none;
   margin-bottom: 16px;
+
 }
 
 .breadcrumbs-item{
   margin-right: 28px;
+  position: relative;
 }
 
 .breadcrumbs-item::after{
@@ -670,9 +723,16 @@ h2.delivery-section-h2{
   background-image: url("../images/icons/arrows/breadcrumbs.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 12px;
-  height: 12px;
-  display: inline-block;
+  width: 7px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  right:-17px;
+  bottom: 7px;
+}
+
+.breadcrumbs-item:last-child:after{
+  content: none;
 }
 
 .breadcrumbs-link{
@@ -687,6 +747,7 @@ h2.delivery-section-h2{
 .section-h2-butter-ice-cream{
   text-align: left;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .butter-ice-cream-catalog-filter{
@@ -722,6 +783,7 @@ h2.delivery-section-h2{
 .catalog-filter-group{
   margin: 0;
   padding: 0;
+  border:none;
 }
 
 .button-pagination{
