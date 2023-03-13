@@ -396,13 +396,26 @@ height:12px;
   width: 270px;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+}
+
+.product-card-title{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
 }
 
 .product-card-content{
-  padding: 0 40px 24px 40px;
+  padding: 133px 40px 24px 40px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+
+.product-card-description{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .product-card-button{
@@ -787,8 +800,10 @@ h2.delivery-section-h2{
 }
 
 .button-pagination{
-  display: flex;
+  display: grid;
   padding: 41px 0;
+  grid-template-columns: 152px 1fr 168px;
+
 }
 
 .catalog-filter-group-sort{
@@ -821,17 +836,17 @@ h2.delivery-section-h2{
   margin-left: auto;
 }
 
-.pagination-item{
-  width:24px;
-  height:24px;
-}
-
 .pagination-link{
   text-decoration: none;
   color: #2D3440;
   background: none;
   border: none;
   position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-icon{
@@ -842,6 +857,25 @@ h2.delivery-section-h2{
   left: 0;
   margin: auto;
   fill: #2D3440;
+}
+
+.pagination-prev .pagination-icon{
+  margin-right: auto;
+  margin-left: 4px;
+}
+
+.pagination-next .pagination-icon{
+  margin-left: auto;
+  margin-right: 4px;
+}
+
+.pagination-current{
+  background: #FCFCFC;
+  border-radius: 50%;
+}
+
+.button-show-more{
+  margin: auto;
 }
 
 .white-button{
@@ -955,6 +989,18 @@ h2.delivery-section-h2{
 .product-list a{
   color: #2D3440;
   text-decoration: none;
+  position: relative;
+}
+
+.product-card-image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  top:-51px;
+  border-radius: 50%;
 }
 
 .advantages-item{
@@ -1036,10 +1082,6 @@ h2.delivery-section-h2{
 }
 
 .contacts-address{
-  background: #FCFCFC;
-}
-
-.pagination-current{
   background: #FCFCFC;
 }
 
