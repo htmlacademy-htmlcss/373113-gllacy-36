@@ -874,8 +874,8 @@ h2.delivery-section-h2{
   border-radius: 50%;
 }
 
-.button-show-more{
-  margin: auto;
+.pagination-show-more{
+  margin: 0 auto;
 }
 
 .white-button{
