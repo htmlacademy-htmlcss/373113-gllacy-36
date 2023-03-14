@@ -20,7 +20,12 @@
           <ul class="navigation-list">
             <!-- раскрывающийся пункт меню -->
             <li class="navigation-item">
-              <button class="navigation-link dropdown">Каталог</button>
+              <button class="navigation-link dropdown">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false"
+                width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z"/>
+                </svg>
+                Каталог</button>
               <ul class="dropdown-menu visually-hidden">
                 <li class="dropdown-menu-item">
                   <a class="dropdown-menu-link" href="#">Новинки</a>
@@ -53,13 +58,28 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
-                <span class="visually-hidden">Поиск</span></a>
+                <span class="visually-hidden">Поиск</span>
+                <svg class="navigation-icon"  aria-hidden="true" focusable="false"
+                width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
+                </svg>
+              </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Вход</a>
+              <a class="navigation-user-link navigation-link-login" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false"
+                width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z"/>
+                </svg>
+                Вход</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">2 товара</a>
+              <a class="navigation-user-link navigation-link-cart" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false"
+                width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
+                </svg>
+                2 товара</a>
             </li>
           </ul>
         </nav>
@@ -91,9 +111,13 @@
 
             <fieldset class="catalog-filter-group catalog-filter-group-sort">
               <legend class="catalog-filter-title">Сортировка</legend>
-                <label class="control control-sort">
-                  По популярности
-                  <input class="control-input catalog-filter-list" type="radio" name="by-popularity">
+                <label class="control control-sort">по популярности
+                  <button class="button control-input catalog-filter-list">
+                    <svg aria-hidden="true" focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="6" fill="none" viewBox="0 0 12 6">
+                      <path fill="#2D3440" fill-rule="evenodd" d="M1.808.195a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66A.667.667 0 0 0 10.2.195L6.003 4.39 1.808.195Z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
                 </label>
             </fieldset>
 
@@ -166,7 +190,7 @@
             </fieldset>
 
 
-            <button class="button rose-button filter-button" type='submit'>Применить</button>
+            <button class="button filter-button" type='submit'>Применить</button>
 
           </form>
 
@@ -389,33 +413,42 @@
             </li>
           </ul>
           <div class="button-pagination">
+            <div class="rectangle"></div>
             <button class="button white-button pagination-show-more" type="button">Показать ещё</button>
 
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-disabled">
+                <button class="pagination-link pagination-prev pagination-disabled">
                   <span class="visually-hidden">Предыдущая страница</span>
-                </a>
+                  <svg class="pagination-icon" aria-hidden="true" focusable="false"
+                  width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.803 1.805a.665.665 0 1 0-.94-.94L.195 5.533a.665.665 0 0 0 0 .941l4.669 4.668a.665.665 0 1 0 .94-.94L1.605 6.003l4.198-4.198Z"/>
+                  </svg>
+                </button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
+                <button class=" pagination-link pagination-current">1</button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
+                <button class="pagination-link" href="#">2</button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
+                <button class="pagination-link" href="#">3</button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
+                <button class="pagination-link" href="#">4</button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
+                <button class=" pagination-link" href="#">5</button>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
+                <button class="pagination-link pagination-next" href="#">
                   <span class="visually-hidden">Следующая страница</span>
-                </a>
+                  <svg class="pagination-icon" aria-hidden="true" focusable="false"
+                  width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48a.665.665 0 0 0 .003-.943L1.135.865Z"/>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
