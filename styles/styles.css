@@ -284,6 +284,10 @@ height:12px;
   margin-bottom: 24px;
 }
 
+.slider-image{
+  display: block;
+}
+
 .slider-image-social-wrapper{
   display: flex;
   flex-direction: column;
@@ -293,14 +297,51 @@ height:12px;
   display: flex;
   padding-top: 21px;
   align-items: center;
-  height: 100%
+  height: 100%;
+  position: relative;
+}
+
+.slider-button{
+  width: 38px;
+  height: 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.slider-button:hover{
+  background-color:#FCFCFC;
+  border:none;
+}
+
+.slider-button:hover .slider-select-icon{
+  fill: #2D3440;
+}
+
+.slider-button:active{
+  background: rgba(252, 252, 252, 0.5);
+  border:none;
+}
+
+.slider-button:active .slider-select-icon{
+  fill: #2D3440;
+}
+
+.slider-button:focus{
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+}
+
+.slider-button:focus .slider-select-icon{
+  fill: #2D3440;
 }
 
 .slider-previous{
   order: -2;
-  background: none;
   padding: 0;
-  position: relative;
+  position: absolute;
+  left: -18px;
 }
 
 .slider-select-icon{
@@ -309,25 +350,29 @@ height:12px;
   right: 0;
   bottom: 0;
   margin: auto;
+  fill:#FCFCFC;
 }
 .slider-previous .slider-select-icon{
-  left:-19px;
+  left:0;
 }
 
 .slider-next .slider-select-icon{
-  right:-19px;
+  left:0;
+  transform: rotate(180deg);
 }
 .slider-next{
-  background: none;
   padding: 0;
-  position: relative;
+  position: absolute;
+  left: 309px;
 }
 
-.slider-current-image-wrapper{
+.slider-current-image-select-wrapper{
+  display: flex;
+  align-items: center;
   background-color: #FFCBD8;
   order: -1;
   width: 327px;
-  height:327px;
+  height: 327px;
   border-radius: 50%;
 }
 
@@ -796,14 +841,17 @@ h2.delivery-section-h2{
 
 .navigation-footer{
   width:356px;
+
 }
 
 .navigation-footer-list{
   display: grid;
   list-style: none;
   grid-template-columns: max-content max-content;
-   grid-template-rows: auto auto;
-   gap: 8px 24px;
+  grid-template-rows: auto auto;
+  gap: 8px 24px;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-footer-item{
@@ -1054,7 +1102,7 @@ h2.delivery-section-h2{
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
 }
 
-.slider-button{
+.slider-button-order{
   margin-right: auto;
 }
 
@@ -1087,6 +1135,7 @@ h2.delivery-section-h2{
 .navigation-link{
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 
@@ -1135,7 +1184,7 @@ h2.delivery-section-h2{
   margin-bottom: 24px;
 }
 
-.slider-button{
+.slider-order-button{
   margin: 0;
   margin-top: 24px;
 }
@@ -1144,6 +1193,7 @@ h2.delivery-section-h2{
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .gifts-title,
