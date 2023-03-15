@@ -127,6 +127,10 @@ body{
   position: relative;
 }
 
+.navigation-user-item{
+  position: relative;
+}
+
 .navigation-link{
   display: block;
   padding: 16px 8px;
@@ -1011,15 +1015,11 @@ h2.delivery-section-h2{
   padding: 8px 63px 8px 16px;
 }
 
-.catalog-filter-item{
-  margin-right: 16px;
-}
-
 /* Control */
 .control {
   position: relative;
   display: block;
-  padding-left: 36px;
+  cursor: pointer;
 }
 
 /* Mark */
@@ -1029,13 +1029,42 @@ h2.delivery-section-h2{
   left: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #242424;
 }
 
+.check-box-checked{
+  display:none;
+}
+
+.radio-checked{
+  display: none;
+}
+
+.control-label{
+  margin-left: 24px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark > .check-box-checked{
+  display: block;
+  }
+
+.control-input[type="checkbox"]:checked + .control-mark > .check-box-disabled{
+  display: none;
+}
+
+.control-input[type="checkbox"]:checked
+
+.control-input[type="radio"]:checked + .control-mark > .radio-checked{
+  display: block;
+  }
+
+.control-input[type="radio"]:checked + .control-mark > .radio-disabled{
+  display: none;
+}
 .catalog-filter-list{
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-filter-group{
@@ -1196,6 +1225,26 @@ h2.delivery-section-h2{
 
 .catalog-filter-group-fill{
   width: 604px;
+}
+
+.check-box-icon{
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
+}
+
+.radio-icon{
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
 }
 
 .filter-button{
@@ -1553,4 +1602,152 @@ h2.delivery-section-h2{
 
 .navigation-user .navigation-user-item:nth-child(2) .navigation-user-link{
   padding:0;
+}
+
+
+.popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 441px;
+  padding: 48px;
+  color: #242424;
+  background: #FCFCFC;
+  border-radius: 4px;
+  min-height: 186px;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.popover-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: ##2D3440;
+
+}
+
+.cart-item-button{
+  position: abdolute;
+  background: none;
+  margin: 0;
+  padding: 0;
+  transform: translateY(50%);
+}
+
+.cart-item-button::after,
+.cart-item-button::before{
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
+.cart-item-button::after{
+  transform: rotate(45deg);
+}
+
+.cart-item-button::before{
+  transform: rotate(-45deg);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 143px 1fr;
+  margin-bottom: 24px;
+}
+
+.cart-items-list{
+  margin: 0;
+  padding:0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.cart-item-image{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.product-card-image-link{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: center;
+}
+
+.cart-image-title-amount-price{
+  display:flex;
+  justify-content: space-between;
+}
+
+.cart-item-title-amount-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item-title,
+.cart-item-amount-price{
+  margin: 0;
+  padding: 0;
+}
+
+.cart-item-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cart-item-amount-price{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.cart-item-price-button{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 86px;
+}
+
+.cart-item-price{
+  margin:0;
+  padding:0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.cart-total-price{
+  margin:0;
+  padding: 0;
+}
+
+.popover-button-order-total-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
 }
