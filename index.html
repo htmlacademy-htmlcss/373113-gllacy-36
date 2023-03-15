@@ -28,26 +28,28 @@
                   Каталог</button>
 
                   <div class="popover popover-dropdown-menu">
+                    <div class="popover-content">
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item dropdown-menu-item-current">
+                          <a class="dropdown-menu-link" href="#">Новинки</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                          <a class="dropdown-menu-link" href="#">Сливочное</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                          <a class="dropdown-menu-link" href="#">Щербеты</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                          <a class="dropdown-menu-link" href="#">Фруктовый лед</a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                          <a class="dropdown-menu-link" href="#">Мелорин</a>
+                        </li>
+                      </ul>
+
+                    </div>
 
                   </div>
-
-                <ul class="dropdown-menu visually-hidden">
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link" href="#">Новинки</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link" href="#">Сливочное</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="dropdown-menu-item">
-                    <a class="dropdown-menu-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="delivery-and-pay.html">Доставка и оплата</a>
@@ -69,6 +71,15 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
                   </svg>
                 </a>
+                <div class="popover popover-search">
+                  <div class="popover-content">
+                    <form class="popover-login-search-form" action="#" method="post" target="_blank">
+                     <input class="field popover-search-input-field" type="text" name="search" placeholder="Поиск по сайту" id="search">
+                    </form>
+                  </div>
+                </div>
+
+
               </li>
               <li class="navigation-user-item">
                 <a class="navigation-user-link navigation-link-login" href="#">
@@ -76,7 +87,25 @@
                   width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z"/>
                   </svg>
-                  Вход</a>
+                  Вход
+                </a>
+
+                  <div class="popover popover-login">
+                    <div class="popover-content">
+                      <form class="popover-login-form" action="#" method="post" target="_blank">
+                        <h2 class="popover-login-form-title">Личный кабинет</h2>
+                        <input class="field popover-input-field" type="email" name="mail" placeholder="email@example.com" id="email" required>
+                        <input class="field" type="password" name="mail" placeholder="email@example.com" id="email" required>
+                        <div class="popver-submit-password-registration">
+                          <button class="button rose-button" type="submit">Войти</button>
+                          <div class="popover-password-registration">
+                            <a class="forgot-password">Забыли пароль?</a>
+                            <a class="registration">Регистрация</a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
               </li>
               <li class="navigation-user-item">
                 <a class="navigation-user-link navigation-link-cart" href="#">
@@ -92,7 +121,7 @@
                     <ul class="cart-items-list">
                       <li class="cart-item">
                         <div class="cart-image-title-amount-price">
-                          <a class="product-card-image-link" href="product.html">
+                          <a class="popver-product-card-image-link" href="product.html">
                             <img class="cart-item-image" src="images/butter-ice-cream/raspberry-ice-cream.jpg" alt="Малиновое мороженное">
                           </a>
 
@@ -110,7 +139,7 @@
                       </li>
                       <li class="cart-item">
                         <div class="cart-image-title-amount-price">
-                          <a class="product-card-image-link" href="product.html">
+                          <a class="popover-product-card-image-link" href="product.html">
                             <img class="cart-item-image" src="images/butter-ice-cream/bubble-gum-ice-cream.jpg" alt="Мороженное Бабл гам">
                           </a>
 
@@ -714,5 +743,36 @@
         </div>
         </footer>
     </div>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-name">Поле для ввод имени и фамилии</label>
+              <input class="feedback-form-field field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-email">"Электронная почта"</label>
+              <input class="feedback-form-field field" type="password" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="feedback-feedback">Роле для отзыва или вопроса</label>
+              <input class="feedback-form-field-feedback field" type="text" id="feedback-feedback" name="feedback-feedback" placeholder="В свободной форме">
+            </p>
+            <p class="field-group">
+              <button class="button rose-button feedback-button-submit">Отправить</button>
+            </p>
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+
   </body>
 </html>
