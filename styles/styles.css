@@ -45,6 +45,7 @@ body{
   line-height: 22px;
   background-color: #FEAFC3;
   color: #2D3440;
+  min-width: 1366px;
 }
 
 .button{
@@ -108,7 +109,6 @@ body{
 
 .logo{
   width:137px;
-  height:55.72px;
   margin-right: 16px;
 }
 
@@ -226,9 +226,9 @@ ol.lider-list{
 }
 
 .slider-item{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display:grid;
+  grid-template-columns: 1fr 1fr 278px;
+
 }
 
 .slider-description-pagination-wrapper{
@@ -280,9 +280,14 @@ height:12px;
 }
 
 .slider-title{
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: left;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+  width: 470px;
 }
 
 .slider-image{
@@ -291,18 +296,18 @@ height:12px;
   position: absolute;
 }
 
-.slider-image-social-wrapper{
-  display: flex;
-  flex-direction: column;
+.slider-next-images{
+  display:flex;
+  justify-content: flex-end;
 }
 
-.slider-images-wrapper{
+/*.slider-images-wrapper{
   display: flex;
   padding-top: 21px;
   align-items: center;
   height: 100%;
   position: relative;
-}
+}*/
 
 .slider-controls{
   position: absolute;
@@ -401,14 +406,10 @@ height:12px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-left:41px;
+  margin-left: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.slider-second{
-  margin-left: 57px;
 }
 
 .slider-pagination{
@@ -1429,19 +1430,13 @@ h2.delivery-section-h2{
   text-decoration: none;
 }
 
-.slider-title{
-  font-size: 36px;
-  line-height: 46px;
-  font-weight: 900;
-  text-align: left;
-}
-
 .slider-description{
   font-size: 18px;
   line-height: 24px;
   text-align: left;
   margin: 0;
   margin-bottom: 24px;
+  width: 429px;
 }
 
 .slider-order-button{
@@ -1513,7 +1508,21 @@ h2.delivery-section-h2{
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+}
+
+.form-label-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 8px;
+}
+
+.label-date{
+  width:58px;
+}
+
+.label-address{
+  width:70px;
 }
 
 .contacts-address{
