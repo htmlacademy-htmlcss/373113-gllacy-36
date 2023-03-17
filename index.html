@@ -8,13 +8,13 @@
   </head>
   <body>
     <div class="container">
+
       <!-- Шапка сайта -->
       <header class="page-header">
 
           <!-- Меню в хедере -->
           <nav class="navigation">
             <!-- логотип -->
-
             <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
             <!-- левое меню в хедере -->
             <ul class="navigation-list">
@@ -26,7 +26,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z"/>
                   </svg>
                   Каталог</button>
-
+                  <!-- popover раскрывающегося пункта меню -->
                   <div class="popover popover-dropdown-menu">
                     <div class="popover-content">
                       <ul class="dropdown-menu">
@@ -71,6 +71,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
                   </svg>
                 </a>
+                 <!-- popover поиска -->
                 <div class="popover popover-search">
                   <div class="popover-content">
                     <form class="popover-login-search-form" action="#" method="post" target="_blank">
@@ -78,8 +79,6 @@
                     </form>
                   </div>
                 </div>
-
-
               </li>
               <li class="navigation-user-item">
                 <a class="navigation-user-link navigation-link-login" href="#">
@@ -89,7 +88,7 @@
                   </svg>
                   Вход
                 </a>
-
+                   <!-- popover входа -->
                   <div class="popover popover-login">
                     <div class="popover-content">
                       <form class="popover-login-form" action="#" method="post" target="_blank">
@@ -115,6 +114,7 @@
                   </svg>
                   2 товара
                 </a>
+                 <!-- popover корзины -->
                 <div class="popover popover-cart">
                   <div class="popover-content">
                     <h2 class="popover-title">Корзина</h2>
@@ -124,7 +124,6 @@
                           <a class="popver-product-card-image-link" href="product.html">
                             <img class="cart-item-image" src="images/butter-ice-cream/raspberry-ice-cream.jpg" alt="Малиновое мороженное">
                           </a>
-
                           <div class="cart-item-title-amount-price">
                             <p class="cart-item-title">Малинка</p>
                             <p class="cart-item-amount-price">1 кг х 310 ₽</p>
@@ -142,7 +141,6 @@
                           <a class="popover-product-card-image-link" href="product.html">
                             <img class="cart-item-image" src="images/butter-ice-cream/bubble-gum-ice-cream.jpg" alt="Мороженное Бабл гам">
                           </a>
-
                           <div class="cart-item-title-amount-price">
                             <p class="cart-item-title">Бабл-гам</p>
                             <p class="cart-item-amount-price">1,5 кг х 320 ₽</p>
@@ -163,12 +161,10 @@
                       <p class="cart-total-price">Итого: 790 ₽</p>
                     </div>
                   </div>
-
                 </div>
               </li>
             </ul>
           </nav>
-
       </header>
 
       <!-- Main сайта -->
@@ -179,10 +175,9 @@
 
         <!-- Секция слайдер -->
         <section class="slider">
-          <h2 class="visually-hidden">Слайдер с рекламой мороженного</h2>
+          <h2 class="visually-hidden">Слайдер с рекламой мороженного</h2> <!-- Заголовок слайдера -->
 
           <ol class="slider-list">
-
             <!-- 1 слайдер -->
             <li class="slider-item slider-first">
               <div class="slider-description-pagination-wrapper">  <!--обертка для описания слайда и пагинации -->
@@ -488,9 +483,9 @@
             </li>
           </ul>
         </section>
+
           <!-- Секция популярные вкусы -->
         <section class="tastes">
-
           <h2 class="section-h2 section-tastes-h2">Попробуйте самые популярные вкусы нашего мороженого</h2>
 
           <ul class="product-list">
@@ -629,6 +624,7 @@
             </div>
           </section>
         </div>
+         <!-- Секция доставка-->
         <section class="delivery">
           <div class="delivery-description-wrapper">
             <h2 class="section-h2 delivery-section-h2">Доставка любимого мороженого на дом</h2>
