@@ -58,7 +58,8 @@ body{
   text-decoration: none;
   border-radius: 26px;
   border: none;
-  padding: 12px 32px;
+  padding: 12px 33px;
+  cursor: pointer;
 }
 
 .container{
@@ -442,6 +443,7 @@ height:12px;
 
 .social-icon-link{
   position: relative;
+  width: 24px;
 }
 
 .social-item:hover{
@@ -499,6 +501,8 @@ height:12px;
 .gifts-description-wrapper{
   padding-left: 36px;
   padding-top: 36px;
+  padding-bottom: 36px;
+  width: 317px;
 }
 
 .gifts-title{
@@ -669,7 +673,7 @@ height:12px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 505px 505px;
-  grid-template-rows: 66px 66px;
+  grid-template-rows: auto auto;
   flex-wrap: wrap;
   grid-gap: 40px 33px;
 }
@@ -680,6 +684,7 @@ height:12px;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 16px;
+  min-height: 48px
 }
 
 .advantages-description{
@@ -709,6 +714,7 @@ height:12px;
   width:303px;
   padding-left: 32px;
   padding-top: 32.59px;
+  padding-bottom: 32px;
 }
 
 .blog-description{
@@ -717,26 +723,27 @@ height:12px;
 }
 
 .subscribe-wrapper{
-  padding: 26px;;
+  padding: 26px;
+  margin: 6px;
+  border-radius: 16px;
 }
 
 .subscribe-description{
   margin: 0;
   padding: 0;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .subscribe-form{
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   width: 506px;
   box-sizing: border-box;
 }
 
 .field{
   margin: 0;
-  padding: 14px 0;
-  padding-left: 16px;
+  padding: 12px 0;
+  padding-left: 12px;
   font: inherit;
   background-color: #ffffff;
   border: 1px solid #B9B9B9;
@@ -776,6 +783,8 @@ border: 2px solid #EA5454;
 
 .field::placeholder{
   color: #B9B9B9;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form-input-subscribe{
@@ -796,6 +805,7 @@ border: 2px solid #EA5454;
   width: 420px;
   padding: 40px;
   margin-left: 135px;
+  padding-bottom: 42px;
 }
 
 .delivery-description-wrapper{
@@ -827,19 +837,72 @@ h2.delivery-section-h2{
   gap: 20px 16px;
 }
 
-.form-label{
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 12,42px;
+  height: 12,42px;
+
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
   display: block;
 }
 
-.info{
-  background-image: url("../images/icons/other/i.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
-  margin: 0;
-  width: 13px;
-  height: 13px;
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #2D3440;
 }
+
+.tooltip-text {
+  background: #FFFFFF;
+  color: #565C66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px 8px;
+  border-radius: 1px;
+  width: 162px;
+  border: 1px solid #B9B9B9;
+  position: absolute;
+  transform: translateX(23px) translateY(-28px);
+  margin-bottom: 6px;
+  z-index: 1;
+  display: none;
+
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 7px;
+  height: 14px;
+  position:absolute;
+  top: 11px;
+  left: -7px;
+  background-color: red;
+
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+
 
 .delivery-form-address{
   grid-column: 1 / -1;
@@ -848,6 +911,7 @@ h2.delivery-section-h2{
 .delivery-submit{
   grid-column: 1 / -1;
   justify-self: center;
+  margin-top: 12px;
 }
 
 .field-group{
@@ -896,13 +960,14 @@ h2.delivery-section-h2{
 .form-button-contact{
   margin: 0;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 19.5px;
 }
 
 .main-footer{
   display: flex;
   justify-content: space-between;
   padding: 48px 0;
+  height: 57px;
 }
 
 .social-item{
@@ -920,7 +985,7 @@ h2.delivery-section-h2{
 .navigation-footer-list{
   display: grid;
   list-style: none;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 8px 24px;
   padding: 0;
@@ -948,8 +1013,8 @@ h2.delivery-section-h2{
   height:16px;
 }
 
-.main-item{
-  padding-top: 32px;
+.copy-rights-wrapper {
+  width: 193px;
 }
 
 .breadcrumbs{
@@ -1430,6 +1495,10 @@ h2.delivery-section-h2{
   text-decoration: none;
 }
 
+.dropdown-menu-link:hover .dropdown-menu-item{
+  background-color: red ;
+}
+
 .slider-description{
   font-size: 18px;
   line-height: 24px;
@@ -1444,11 +1513,14 @@ h2.delivery-section-h2{
   margin-top: 24px;
 }
 
-.button{
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  cursor: pointer;
+.gifts-item-raspbery{
+  background:  #FF7799 url("../images/png/raspberries-in-a-horn.png") no-repeat;
+  background-position: right;
+}
+
+.gifts-item-marshmallow{
+  background:  #FF7799 url("../images/png/marshmallow-in-a-horn.png") no-repeat;
+  background-position: right;
 }
 
 .gifts-title,
@@ -1555,9 +1627,6 @@ h2.delivery-section-h2{
   padding:0;
 }
 
-.gifts-item{
-  background: #FF7799;
-}
 
 .product-card{
   background: #FCFCFC;
@@ -1574,7 +1643,6 @@ h2.delivery-section-h2{
 
 .subscribe{
   background: #FCFCFC url("../images/backgrounds/subscribe.jpg");
-  padding: 6px;
 }
 
 .subscribe-wrapper{
@@ -1627,6 +1695,18 @@ h2.delivery-section-h2{
 .popover-cart{
   width: 441px;
   padding: 48px;
+}
+
+.popover-empty-cart{
+  width: 288px;
+  text-align: center;
+  display: flex;
+  min-height: 156px;
+
+}
+
+.popover-empty-content{
+  margin: auto;
 }
 
 .popover-content {
@@ -1788,7 +1868,7 @@ h2.delivery-section-h2{
 }
 
 .popover-dropdown-menu{
-  display: none;
+  display: block;
 }
 
 .popover-cart{

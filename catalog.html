@@ -14,8 +14,9 @@
         <!-- Меню в хедере -->
         <nav class="navigation">
           <!-- логотип -->
-
-          <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg" width="137px">
+          <a class="logo" href="index.html">
+            <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
+          </a>
           <!-- левое меню в хедере -->
           <ul class="navigation-list">
             <!-- раскрывающийся пункт меню -->
@@ -26,23 +27,30 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z"/>
                 </svg>
                 Каталог</button>
-              <ul class="dropdown-menu visually-hidden">
-                <li class="dropdown-menu-item">
-                  <a class="dropdown-menu-link" href="#">Новинки</a>
-                </li>
-                <li class="dropdown-menu-item">
-                  <a class="dropdown-menu-link" href="#">Сливочное</a>
-                </li>
-                <li class="dropdown-menu-item">
-                  <a class="dropdown-menu-link" href="#">Щербеты</a>
-                </li>
-                <li class="dropdown-menu-item">
-                  <a class="dropdown-menu-link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-menu-item">
-                  <a class="dropdown-menu-link" href="#">Мелорин</a>
-                </li>
-              </ul>
+                <!-- popover раскрывающегося пункта меню -->
+                <div class="popover popover-dropdown-menu">
+                  <div class="popover-content">
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-menu-item dropdown-menu-item-current">
+                        <a class="dropdown-menu-link" href="#">Новинки</a>
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a class="dropdown-menu-link" href="#">Сливочное</a>
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a class="dropdown-menu-link" href="#">Щербеты</a>
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a class="dropdown-menu-link" href="#">Фруктовый лед</a>
+                      </li>
+                      <li class="dropdown-menu-item">
+                        <a class="dropdown-menu-link" href="#">Мелорин</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="delivery-and-pay.html">Доставка и оплата</a>
@@ -64,6 +72,14 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
                 </svg>
               </a>
+               <!-- popover поиска -->
+              <div class="popover popover-search">
+                <div class="popover-content">
+                  <form class="popover-login-search-form" action="#" method="post" target="_blank">
+                   <input class="field popover-search-input-field" type="text" name="search" placeholder="Поиск по сайту" id="search">
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-link-login" href="#">
@@ -71,7 +87,25 @@
                 width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z"/>
                 </svg>
-                Вход</a>
+                Вход
+              </a>
+                 <!-- popover входа -->
+                <div class="popover popover-login">
+                  <div class="popover-content">
+                    <form class="popover-login-form" action="#" method="post" target="_blank">
+                      <h2 class="popover-login-form-title">Личный кабинет</h2>
+                      <input class="field popover-input-field" type="email" name="mail" placeholder="email@example.com" id="email" required>
+                      <input class="field" type="password" name="mail" placeholder="email@example.com" id="password" required>
+                      <div class="popver-submit-password-registration">
+                        <button class="button rose-button" type="submit">Войти</button>
+                        <div class="popover-password-registration">
+                          <a class="forgot-password">Забыли пароль?</a>
+                          <a class="registration">Регистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-link-cart" href="#">
@@ -79,11 +113,77 @@
                 width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
                 </svg>
-                2 товара</a>
+                2 товара
+              </a>
+               <!-- popover корзины -->
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <div class="cart-image-title-amount-price">
+                        <a class="popver-product-card-image-link" href="product.html">
+                          <img class="cart-item-image" src="images/butter-ice-cream/raspberry-ice-cream.jpg" alt="Малиновое мороженное">
+                        </a>
+                        <div class="cart-item-title-amount-price">
+                          <p class="cart-item-title">Малинка</p>
+                          <p class="cart-item-amount-price">1 кг х 310 ₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-item-price-button">
+                        <p class="cart-item-price">310 ₽</p>
+                        <button type="button" class="cart-item-button button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </div>
+                    </li>
+                    <li class="cart-item">
+                      <div class="cart-image-title-amount-price">
+                        <a class="popover-product-card-image-link" href="product.html">
+                          <img class="cart-item-image" src="images/butter-ice-cream/bubble-gum-ice-cream.jpg" alt="Мороженное Бабл гам">
+                        </a>
+                        <div class="cart-item-title-amount-price">
+                          <p class="cart-item-title">Бабл-гам</p>
+                          <p class="cart-item-amount-price">1,5 кг х 320 ₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-item-price-button">
+                        <p class="cart-item-price">480 ₽</p>
+                        <button type="button" class="cart-item-button button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="popover-button-order-total-price">
+                    <button type="button" class="button rose-button popover-cart-button">
+                      Оформить заказ
+                    </button>
+                    <p class="cart-total-price">Итого: 790 ₽</p>
+                  </div>
+                </div>
+              </div>
             </li>
+            <!--аустая корзина-->
+            <li class="navigation-user-item empty-cart">
+              <a class="navigation-user-link navigation-link-cart" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false"
+                width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
+                </svg>
+                нет товаров
+              </a>
+               <!-- popover корзины -->
+              <div class="popover popover-empty-cart">
+                <div class="popover-empty-content">
+                  <h2 class="popover-empty-title">Ваша корзина пока пуста</h2>
+
+                </div>
+              </div>
+            </li>
+
           </ul>
         </nav>
-
     </header>
       <!-- Main сайта -->
 

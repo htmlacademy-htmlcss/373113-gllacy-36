@@ -5,6 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
   <body>
     <div class="container">
@@ -15,17 +16,19 @@
           <!-- Меню в хедере -->
           <nav class="navigation">
             <!-- логотип -->
-            <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
+            <a class="logo" href="index.html">
+              <img class="logo" alt="Логотип магазина мороженного Глэйси" src="images/logo.svg">
+            </a>
             <!-- левое меню в хедере -->
             <ul class="navigation-list">
               <!-- раскрывающийся пункт меню -->
               <li class="navigation-item">
-                <button class="navigation-link dropdown">
+                <a class="navigation-link dropdown">
                   <svg class="navigation-icon" aria-hidden="true" focusable="false"
                   width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 7.053a.667.667 0 1 0-.943.943l4.66 4.66a.664.664 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943l-4.196 4.195-4.195-4.195Z"/>
                   </svg>
-                  Каталог</button>
+                  Каталог</a>
                   <!-- popover раскрывающегося пункта меню -->
                   <div class="popover popover-dropdown-menu">
                     <div class="popover-content">
@@ -163,6 +166,24 @@
                   </div>
                 </div>
               </li>
+              <!--аустая корзина-->
+              <li class="navigation-user-item empty-cart">
+                <a class="navigation-user-link navigation-link-cart" href="#">
+                  <svg class="navigation-icon" aria-hidden="true" focusable="false"
+                  width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"/>
+                  </svg>
+                  нет товаров
+                </a>
+                 <!-- popover корзины -->
+                <div class="popover popover-empty-cart">
+                  <div class="popover-empty-content">
+                    <h2 class="popover-empty-title">Ваша корзина пока пуста</h2>
+
+                  </div>
+                </div>
+              </li>
+
             </ul>
           </nav>
       </header>
@@ -468,21 +489,21 @@
         <section class="gifts">
           <h2 class="section-h2 section-gifts-h2">Заказывайте мороженое и получайте подарки!</h2>
           <ul class="gifts-list">
-            <li class="gifts-item">
+            <li class="gifts-item gifts-item-raspbery">
               <div class="gifts-description-wrapper">
                 <h3 class="gifts-title">Малинка даром!</h3>
                 <p class="gifts-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <button class="button white-button gifts-button">Хочу подарок</button>
               </div>
-              <img src="images/png/raspberries-in-a-horn.png" alt="Ягоды малины в рожке">
+
             </li>
-            <li class="gifts-item">
+            <li class="gifts-item gifts-item-marshmallow">
               <div class="gifts-description-wrapper">
                 <h3 class="gifts-title">Маршмеллоу даром!</h3>
                 <p class="gifts-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
                 <button class="button white-button gifts-button">Хочу подарок</button>
               </div>
-              <img src="images/png/marshmallow-in-a-horn.png" alt="Кусочки маршмеллоу в рожке">
+
             </li>
           </ul>
         </section>
@@ -622,7 +643,8 @@
               </p>
               <form class="subscribe-form">
                 <input class="field form-input-subscribe" type="email" name="email" placeholder="email@example.com">
-                <input class="button rose-button form-button" type="submit">
+
+                <button class="button rose-button form-button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
@@ -638,34 +660,50 @@
             <h3 class="visually-hidden">Форма заявки на доставку на дом</h3>
             <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="deliveri-details-form">
-              <div class="field-group delivery-form-date">
-                <div class="form-label-info label-date">
+              <p class="field-group delivery-form-date">
+                <span class="form-label form-label-icon">
                   <label class="form-label" for="delivery-date">
                     Дата
                   </label>
-                  <button class="button info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                </div>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false"
+                      width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите название<br> улицы, дома и квартиры</span>
+                  </span>
+                </span>
+
                 <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-              </div>
+              </p>
               <p class="field-group delivery-form-phone">
                 <label class="form-label" for="delivery-phone">
                   Телефон
                 </label>
                 <input class="field" type="text" id="delivery-phone" name="phone" placeholder="+7 800 999-00-00">
               </p>
-              <div class="field-group delivery-form-address">
-                <div class="form-label-info label-address">
-                <label class="form-label" for="delivery-address">
+
+
+              <p class="field-group delivery-form-address">
+
+                <span class="form-label form-label-icon">
+                  <label class="form-label" for="delivery-date">
                     Адрес
                   </label>
-                  <button class="button info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                </div>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false"
+                      width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.125a4.875 4.875 0 1 0 0 9.75 4.875 4.875 0 0 0 0-9.75ZM.792 7a6.209 6.209 0 1 1 12.417 0A6.209 6.209 0 0 1 .792 7ZM7 6.333c.368 0 .667.299.667.667v2.217a.667.667 0 0 1-1.334 0V7c0-.368.299-.667.667-.667Zm0-2.216A.667.667 0 0 0 7 5.45h.006a.667.667 0 0 0 0-1.333H7Z"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите название<br> улицы, дома и квартиры</span>
+                  </span>
+                </span>
                 <input class="field" type="text" id="delivery-address" name="address" placeholder="ул. Большая Конюшенная, 19/8">
-              </div>
+              </p>
                 <button class="button rose-button delivery-submit" type="submit">Отправить</button>
             </form>
           </div>
